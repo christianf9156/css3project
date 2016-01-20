@@ -1,6 +1,16 @@
-#pic{
+#ball{
     width:200px;
    height:200px;
+   transition:;
+   animation: spin 3s linear 5s infinite alternate;
+}
+@keyframes spin{
+    from{
+        
+    }
+    to{
+        
+    }
 }
 #line{
     border-width:10px;
