@@ -1,18 +1,24 @@
+
 #ball{
     width:200px;
    height:200px;
+   position: relative;
    transition:;
-   animation: spin 3s linear 5s infinite alternate;
+   animation: colors 5s linear 1s infinite alternate;
+   
 }
-@keyframes spin{
-    from{
-        
-    }
-    to{
-        
-    }
+@keyframes colors{
+
+    0%   {background-color:red; left:0px; }
+    25%  {background-color:yellow; left:200px; }
+    50%  {background-color:blue; left:200px; }
+    75%  {background-color:green; left:0px; }
+    100% {background-color:red; left:0px; }
+    
 }
+
 #line{
     border-width:10px;
     border-color:red;
 }
+
