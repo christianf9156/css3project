@@ -1,5 +1,5 @@
 
-#ball:hover{
+#ball:hover{       /* Plays animation, when mouse is in the ball */
     width:200px;
    height:200px;
    position: relative;
@@ -9,32 +9,33 @@
  }
 
 @keyframes roll{
-    0%{left:0px;transition:width 100s, height 100s ;transform:rotate(180deg);}
+/* 0% = start */0%{left:0px;transition:width 100s, height 100s ;transform:rotate(180deg);}
     25%{left:800px;transition:width 100s, height 100s ;transform:rotate(-180deg);}
     50%{left:1000px;transition:width 100s, height 100s ;transform:rotate(360deg);}
-    100%{left:1200px;transition:width 100s, height 100s ;transform:rotate(-360deg);}
-    
-}
+/* 100% = finished */100%{left:1200px;transition:width 100s, height 100s ;transform:rotate(-360deg);}
+}    /* Makes the ball roll back & forth */
+     /* Rotate = spins the ball in opposite directions */
+     /* left = pushes the ball (from the left) (to the right) ---> repeats = loop */
 
 #line{
-   position:inline-box;
+   position:inline-box; 
    border-color:gold;
-    border-width:5px;
-    box-shadow:3px 6px ;
+    border-width:5px; 
+    box-shadow:3px 6px; /* Gives the line a shadow (3d affect) */
 }
 
 body{
     background-color:white;
-    animation: colors 5s linear 1s infinite alternate;
+    animation: colors 5s linear 1s infinite alternate; /* changes the background's color */
 }
 
 @keyframes colors{
-
+            /* radial-gradient = Gives color circular appearence */
     0%   {background:radial-gradient(red,black,black); left:0px; }
     25%  {background-color:black; left:200px; }
     50%  {background:radial-gradient(orange,black,yellow); left:200px; }
     75%  {background-color:red; left:0px; }
     100% {background:radial-gradient(gold,blue,black); left:0px; }
-}
+}   
 
 
