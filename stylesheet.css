@@ -6,31 +6,35 @@
    transition:width 4s, height 4s;
    transform:rotate(180deg);
   animation: roll 10s linear 2s infinite alternate;
-   
-}
+ }
 
 @keyframes roll{
     0%{left:0px;transform:rotate(180deg);}
     25%{left:800px;transform:rotate(-180deg);}
     50%{left:1000px;transform:rotate(360deg);}
     100%{left:1200px;transform:rotate(-360deg);}
+    
 }
 
 #line{
-    border-width:10px;
-    border-color:#CC0033;
-    
+   position:inline-box;
+   border-color:gold;
+    border-width:5px;
+    box-shadow:3px 6px ;
 }
+
 body{
-    background-color:blue;
+    background-color:white;
     animation: colors 5s linear 1s infinite alternate;
 }
+
 @keyframes colors{
 
-    0%   {background:linear-gradient(black,red); left:0px; }
-    25%  {background-color:rgb(255,0,255); left:200px; }
-    50%  {background:linear-gradient(yellow,red); left:200px; }
+    0%   {background:radial-gradient(red,black,black); left:0px; }
+    25%  {background-color:black; left:200px; }
+    50%  {background:radial-gradient(orange,black,yellow); left:200px; }
     75%  {background-color:red; left:0px; }
-    100% {background:linear-gradient(red,blue); left:0px; }
+    100% {background:radial-gradient(gold,blue,black); left:0px; }
 }
+
 
