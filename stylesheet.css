@@ -1,18 +1,18 @@
 
-#ball{
+#ball:hover{
     width:200px;
    height:200px;
    position: relative;
-   transition:width 4s, height 4s;
+   transition:width 100s, height 100s ;
    transform:rotate(180deg);
-  animation: roll 10s linear 2s infinite alternate;
+  animation: roll 10s linear 1s infinite alternate;
  }
 
 @keyframes roll{
-    0%{left:0px;transform:rotate(180deg);}
-    25%{left:800px;transform:rotate(-180deg);}
-    50%{left:1000px;transform:rotate(360deg);}
-    100%{left:1200px;transform:rotate(-360deg);}
+    0%{left:0px;transition:width 100s, height 100s ;transform:rotate(180deg);}
+    25%{left:800px;transition:width 100s, height 100s ;transform:rotate(-180deg);}
+    50%{left:1000px;transition:width 100s, height 100s ;transform:rotate(360deg);}
+    100%{left:1200px;transition:width 100s, height 100s ;transform:rotate(-360deg);}
     
 }
 
