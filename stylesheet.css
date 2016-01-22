@@ -4,8 +4,18 @@
    height:200px;
    position: relative;
    transition:;
-   animation: colors 5s linear 1s infinite alternate;
+  anim 
    
+}
+
+
+#line{
+    border-width:10px;
+    border-color:red;
+}
+body{
+    background-color:blue;
+    animation: colors 5s linear 1s infinite alternate;
 }
 @keyframes colors{
 
@@ -14,11 +24,5 @@
     50%  {background-color:blue; left:200px; }
     75%  {background-color:green; left:0px; }
     100% {background-color:red; left:0px; }
-    
-}
-
-#line{
-    border-width:10px;
-    border-color:red;
 }
 
